@@ -176,7 +176,7 @@ window.addEventListener(`load`, () => {
     let images ='';
     for(let i=0; i<20; i++){
       if(i<10) i='0'+i
-      images += `<img src = "images/quick0${j+1}/quick0${j+1}_000${i}.png" />`;
+      images += `<img src = "images/quick0${j+1}/quick0${j+1}_000${i}.png" alt='${i}'/>`;
     }
     quickSpan[j].innerHTML = images
   }
