@@ -577,18 +577,13 @@
 </div>
 <!-- //footer -->
 
-</body>
-</html>
 
 <script>
-  // AJAX의 최신 Fetch API 사용해서
-  // html 문서안에서 다른 html문서 불러오기
-  // 자바스크립트 비동기 방식으로 async await
+
   async function fetchHtmlAsText(url) {
     const response = await fetch(url);
     console.log(response)
-    return await response.text(); // response의 text를 밑에 넣어준다
-
+    return await response.text(); 
   }
   async function importPage(target) {
     document.querySelector(`#${target}`).innerHTML = await fetchHtmlAsText(`${target}.html`);
@@ -596,3 +591,7 @@
   importPage(`header`);
   importPage(`footer`);
 </script>
+
+</body>
+</html>
+
