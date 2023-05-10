@@ -93,7 +93,7 @@
   .header_wrap.on{height:445px}
 
   /* 로고 */
-  h1.logo{position: absolute;left: 0;top: 67px;}
+  h1.logo{position: absolute;left: 25px;top: 67px;}
 
   /* 탑메뉴 */
   dl.topMenu{display:flex; justify-content: flex-end;letter-spacing: 0;}
@@ -174,7 +174,7 @@
   .header_wrap.on{height:445px}
 
   /* 로고 */
-  h1.logo{position: absolute;left: 0;top: 67px;}
+  h1.logo{position: absolute;left: 25px;top: 67px;}
 
   /* 탑메뉴 */
   dl.topMenu{display:flex; justify-content: flex-end;letter-spacing: 0;}

@@ -1,4 +1,7 @@
 /* footer */
+#footer{ visibility: hidden; opacity: 0; transform: translateY(100px); transition: all 0.6s ease-in;}
+#footer.on{visibility: visible; opacity: 1;  transform: translateY(0)}
+
 .footer_inner a{color: #9f9f9f;}
 
 .footer_inner>ul>li{display:inline-block; padding: 0 9px;}

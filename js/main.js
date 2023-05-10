@@ -319,8 +319,37 @@ window.addEventListener(`load`, () => {
   }
   
   
+  
   /* 스크롤 이벤트 */
+  const banner = document.querySelector('.banner')
+  const content1 = document.querySelector('.content1')
+  const content2 = document.querySelector('.content2')
+  const content3 = document.querySelector('.content3')
+  const footer = document.querySelector('#footer')
+  
+  banner.classList.add('on');
+  content1.classList.add('on');
+
   window.addEventListener('scroll', () =>{
+
+    let scrollTop = window.pageYOffset;
+    let windowHeight = window.innerHeight;
+    let scrollHeight = document.documentElement.scrollHeight - windowHeight;
+
+    let scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+    if (scrollPercentage >= 5) {
+      content2.classList.add('on');
+    }
+  
+    if (scrollPercentage >= 80) {
+      content3.classList.add('on');
+    }
+   
+    if (scrollPercentage >= 90) {
+      footer.classList.add('on');
+    }
+
     let scroll = document.querySelector('html').scrollTop;
     
     //도넛
