@@ -22,27 +22,17 @@ window.addEventListener(`load`, () => {
     /* topmenu */
   mob_topMenu_dd[4].addEventListener('click', e=>{
     e.preventDefault();
-    
+    console.log(mob_topMenu_dd[4])
     toggleOn(mob_topMenu_ul)
     toggleOn(mob_topMenu_dd[4])
   })
   
     /* gnb */
+    
   mob_gnb_li.forEach((el,index) => {
     el.addEventListener('click', e =>{
       e.preventDefault();
-      
-      if(el.classList.contains('on'))
-      {removeOn(el)}
-      
-      mob_gnb_li.forEach(li => {
-        removeOn(li)
-      })
-      mob_gnb_li_ul.forEach(li => {
-        removeOn(li)
-      });
-  
-      toggleOn(mob_gnb_li[index])
+      toggleOn(el)
       toggleOn(mob_gnb_li_ul[index-1])
     })
   });
